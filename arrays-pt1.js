@@ -1,9 +1,9 @@
 // 1. Declare a variable named "euroCities" and assign an array to the variable e.g. ["Paris", "London", "Valletta", "Prague", "Rome"]. Declare another variable and assign the second item of the array as a value.
 
-const euroCities = ["Bilbao", "Hamburg", "London", "MexicoDF", "NYC"];
+const euroCities = ["Bilbao", "Hamburg", "London", "Paris", "NYC"];
 const rainiestCity = euroCities.slice(1,2);
 console.log(euroCities);  
-// [ 'Bilbao', 'Hamburg', 'London', 'MexicoDF', 'NYC' ]
+// [ 'Bilbao', 'Hamburg', 'London', 'Paris', 'NYC' ]
 console.log(rainiestCity);
 // ANSWER: 
 // [ 'Hamburg' ]
@@ -14,7 +14,7 @@ console.log(rainiestCity);
 euroCities[0] = "Berlin";
 console.log(euroCities);
 // ANSWER:
-// [ 'Berlin', 'Hamburg', 'London', 'MexicoDF', 'NYC' ]
+// [ 'Berlin', 'Hamburg', 'London', 'Paris', 'NYC' ]
 
 
 // 3. Print the length of the array "euroCities".
@@ -25,20 +25,20 @@ console.log(euroCities.length);
 euroCities.pop();
 // it deletes NYC
 console.log(euroCities);
-// ANSWER: It prints [ 'Berlin', 'Hamburg', 'London', 'MexicoDF' ]
+// ANSWER: It prints [ 'Berlin', 'Hamburg', 'London', 'Paris' ]
 
 
 // 5. Use an array method to add "Budapest" to the euroCities array. 
 
 euroCities.push("Budapest");
 console.log(euroCities);
-// ANSWER: it prints [ 'Berlin', 'Hamburg', 'London', 'MexicoDF', 'Budapest' ]
+// ANSWER: it prints [ 'Berlin', 'Hamburg', 'London', 'Paris', 'Budapest' ]
 
 // 6. **Bonus**: Remove the second and third items from the euroCities array. 
 
 euroCities.splice(1, 2);
 console.log(euroCities);
-// ANSWER: it prints [ 'Berlin', 'MexicoDF', 'Budapest' ]
+// ANSWER: it prints [ 'Berlin', 'Paris', 'Budapest' ]
 
 // 7. Create another variable named asianCities and assign an array of at least 5 cities to the variable.
 
@@ -58,26 +58,26 @@ console.log(lovedAsianCities);
 
 const worldCities = euroCities.concat(asianCities);
 console.log(worldCities);
-// ANSWER: it prints [ 'Berlin', 'MexicoDF', 'Budapest', 'Tokio', 'Jakarta' ]
+// ANSWER: it prints [ 'Berlin', 'Paris', 'Budapest', 'Tokio', 'Jakarta' ]
 
 // 10. Reverse the order of worldCities.
 
 worldCities.reverse();
 console.log(worldCities);
-// ANSWER: it prints [ 'Jakarta', 'Tokio', 'Budapest', 'MexicoDF', 'Berlin' ]
+// ANSWER: it prints [ 'Jakarta', 'Tokio', 'Budapest', 'Paris', 'Berlin' ]
 
 
 // 11. **Bonus**: Replace the 3rd item in the array of worldCities with "Toronto". 
 
 worldCities[2] = "Toronto";
 console.log(worldCities);
-// ANSWER: [ 'Jakarta', 'Tokio', 'Toronto', 'MexicoDF', 'Berlin' ]
+// ANSWER: [ 'Jakarta', 'Tokio', 'Toronto', 'Paris', 'Berlin' ]
 
 // 12. **Bonus**: Remove no elements from the array of worldCities, but insert "Washington" at the 2nd position.
 
 worldCities.splice(1,0, "Washington");
 console.log(worldCities);
-// ANSWER: it prints ['Jakarta', 'Washington', 'Tokio', 'Toronto', 'MexicoDF', 'Berlin' ]
+// ANSWER: it prints ['Jakarta', 'Washington', 'Tokio', 'Toronto', 'Paris', 'Berlin' ]
 
 // 13. **Bonus** Write a program to join all elements of the result (worldCities) into a string. 
 // Example: worldCities = ["Berlin", "London", "Bangkok", "Phnom Penh"];
@@ -87,10 +87,10 @@ console.log(worldCities);
 
 
 console.log(worldCities.join(" ,"));
-// ANSWER: it prints Jakarta ,Washington ,Tokio ,Toronto ,MexicoDF ,Berlin
+// ANSWER: it prints Jakarta ,Washington ,Tokio ,Toronto ,Paris ,Berlin
 
 console.log(worldCities.join("+"));
-// ANSWER: it prints: Jakarta+Washington+Tokio+Toronto+MexicoDF+Berlin
+// ANSWER: it prints: Jakarta+Washington+Tokio+Toronto+Paris+Berlin
 
 
 // **Bonus**
