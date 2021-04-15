@@ -1,9 +1,9 @@
 // 1. Declare a variable named "euroCities" and assign an array to the variable e.g. ["Paris", "London", "Valletta", "Prague", "Rome"]. Declare another variable and assign the second item of the array as a value.
 
-const euroCities = ["Bilbao", "Hamburg", "London", "Paris", "NYC"];
+const euroCities = ["Bilbao", "Hamburg", "London", "Paris", "Venice"];
 const rainiestCity = euroCities.slice(1,2);
 console.log(euroCities);  
-// [ 'Bilbao', 'Hamburg', 'London', 'Paris', 'NYC' ]
+// [ 'Bilbao', 'Hamburg', 'London', 'Paris', 'Venice' ]
 console.log(rainiestCity);
 // ANSWER: 
 // [ 'Hamburg' ]
@@ -14,7 +14,7 @@ console.log(rainiestCity);
 euroCities[0] = "Berlin";
 console.log(euroCities);
 // ANSWER:
-// [ 'Berlin', 'Hamburg', 'London', 'Paris', 'NYC' ]
+// [ 'Berlin', 'Hamburg', 'London', 'Paris', 'Venice'  ]
 
 
 // 3. Print the length of the array "euroCities".
